@@ -1,20 +1,15 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-import java.util.Scanner;
-
-public class Main {
+public class SumEvenNumbers  {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        // 합계를 저장할 변수 초기화
+        int sum = 0;
 
-        System.out.print("정수를 입력하세요: ");
-        int number = scanner.nextInt();
-
-        if (number >= 1 && number <= 100) {
-            System.out.println("1에서 100사이의 값입니다");
-        } else {
-            System.out.println("1에서 100사이의 값이 아닙니다");
+        // 모든 수를 검사하고 짝수만 더하는 방법
+        for (int i = 1; i <= 1000; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
         }
-
-        scanner.close();
+        System.out.println
+                    ( "1부터 1000까지의 짝수의 합: " + sum );
     }
 }
